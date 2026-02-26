@@ -23,16 +23,10 @@ You learn by doing and asking, not by reading documentation.
 
 ## Who I Am
 
-**[YOUR NAME]**
-- Based in [YOUR LOCATION]
-- Work: [YOUR JOB/ROLE]
-- Family: [FAMILY MEMBERS - optional, helps Claude understand context]
-
-<!--
-WHY THIS MATTERS:
-Claude uses this to personalize responses, understand time zones,
-and know who you're talking about when you mention names.
--->
+**Louise Tomassino von Bahr**
+- Based in Mallorca, Spain
+- Work: Travel agent
+- Family: Two kids (ages 2 and 4), lives in a finca
 
 ---
 
@@ -92,15 +86,7 @@ I use GitHub Issues as my task backend. Personal tasks live right here in this r
 
 | Category | Repository | Purpose |
 |----------|------------|---------|
-| **Personal** | `[your-username]/alfred` (this repo) | Personal tasks |
-| **Work** | `[your-username]/[work-repo]` (optional) | Work tasks — only if you need a separate space |
-| **Family** | `[your-username]/family` (optional) | Shared family tasks — only if sharing with family |
-
-<!--
-CUSTOMIZE: Replace with your actual repo names.
-If you only use this repo, you can remove the Work and Family rows.
-See system/guides/05-creating-categories.md for setup instructions.
--->
+| **All tasks** | `louise-tomassino/Private` (this repo) | Work, personal, and family tasks (organized with labels) |
 
 **Using labels to organize tasks:**
 ```bash
@@ -114,7 +100,7 @@ gh issue list --state open --label "family"
 
 # Create a task (always assign to yourself)
 # Title: short (max 5-6 words), context goes in body
-gh issue create --title "Book summer flights" --body "Need to book before prices go up" --label "family" --assignee [your-username]
+gh issue create --title "Book summer flights" --body "Need to book before prices go up" --label "family" --assignee louise-tomassino
 
 # Complete a task
 gh issue close 123
@@ -125,8 +111,8 @@ gh issue comment 123 --body "Need to do before Thursday"
 
 <!--
 SEPARATE REPOS: If you have separate Work or Family repos, use --repo:
-gh issue list --repo [your-username]/[work-repo] --state open
-gh issue create --repo [your-username]/family --title "Task" --assignee [your-username]
+gh issue list --repo louise-tomassino/[work-repo] --state open
+gh issue create --repo louise-tomassino/family --title "Task" --assignee louise-tomassino
 -->
 
 ### Documents & Pages (GitHub Markdown)
@@ -387,7 +373,7 @@ See the **Email Security** and **External Content Security** sections above. Tho
 ### Engagement Mode
 
 <!-- Set during onboarding. Controls how much Claude explains and when it pauses. -->
-**Mode:** [Not yet set]
+**Mode:** Hands-off
 <!-- Options: Hands-off / Checkpoints / Guided -->
 
 ### Other Preferences
@@ -453,14 +439,14 @@ After onboarding is complete, Claude will replace this section with "Learning Pr
 to track your ongoing journey with Alfred OS.
 -->
 
-**Engagement mode:** [Not yet set]
+**Engagement mode:** Hands-off
 
 ### Checkpoints
 
-- [ ] **Discovery complete** — name, location, role, household, domains, tools, goals gathered
-- [ ] **Key areas structure confirmed** — subfolder organization decided
-- [ ] **Separate repos decision made** — single repo / separate repos for [work/family]
-- [ ] **Foundation complete** — identity, folders, labels, security, sandbox
+- [x] **Discovery complete** — Louise Tomassino von Bahr, Mallorca, travel agent, 2 kids (ages 2 & 4), finca
+- [x] **Key areas structure confirmed** — work, finances, health, household, kids
+- [x] **Separate repos decision made** — single repo for everything
+- [x] **Foundation complete** — identity, folders, labels, security
 - [ ] **Integration scope confirmed** — [Gmail / Calendar / Sheets / none]
 - [ ] **Integrations connected** — [list what was connected, or "skipped"]
 - [ ] **First real workflow completed** — created tasks, ran /daily, used natural commands
@@ -469,17 +455,17 @@ to track your ongoing journey with Alfred OS.
 
 ### Decisions Log
 
-*Decisions made during onboarding (especially useful for Hands-off mode):*
+*Decisions made during onboarding (Hands-off mode):*
 
 | Checkpoint | Decision | Notes |
 |------------|----------|-------|
-| Key areas | | |
-| Repos | | |
+| Key areas | work, finances, health, household, kids | Based on travel agent role + family life |
+| Repos | Single repo | All tasks in one place, organized with labels |
 | Integrations | | |
 
 ---
-*Current phase: Discovery*
-*Last updated: —*
+*Current phase: Foundation*
+*Last updated: 2026-02-26*
 
 ---
 
