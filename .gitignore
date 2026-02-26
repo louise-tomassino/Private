@@ -1,0 +1,19 @@
+.DS_Store
+*.swp
+*~
+.mcp/
+/system/drafts/
+/system/memory/.initialized
+
+# Credentials and secrets — never commit these
+.env
+.env.*
+*.keys.json
+credentials.json
+credentials*.json
+tokens.json
+*-service-account.json
+service-account*.json
+*.pem
+*.key
+keys/
